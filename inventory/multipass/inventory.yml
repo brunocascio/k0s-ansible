@@ -1,0 +1,32 @@
+---
+all:
+  children:
+    initial_controller:
+      hosts:
+        platform-devlab-node01:
+    controller:
+      hosts:
+        platform-devlab-node02:
+        platform-devlab-node03:
+    worker:
+      hosts:
+        platform-devlab-node04:
+    #     platform-devlab-node05:
+    #     platform-devlab-node06:
+  hosts:
+    platform-devlab-node01:
+      ansible_host: 172.17.10.103
+      ansible_user: platform
+    platform-devlab-node02:
+      ansible_host: 172.17.10.104
+      ansible_user: platform
+    platform-devlab-node03:
+      ansible_host: 172.17.10.105
+      ansible_user: platform
+    platform-devlab-node04:
+      ansible_host: 172.17.10.106
+      ansible_user: platform
+    # platform-devlab-node05:
+    #   ansible_host: 192.168.64.58
+    # platform-devlab-node06:
+    #   ansible_host: 192.168.64.60

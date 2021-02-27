@@ -1,6 +1,5 @@
 *.code-workspace
 .vscode
-inventory/*
 !inventory/sample
 inventory/*/artifacts/
 multipass-cloud-init.yml
