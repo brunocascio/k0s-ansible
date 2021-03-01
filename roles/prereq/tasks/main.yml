@@ -1,4 +1,8 @@
 ---
+- name: Upgrade System
+  apt:
+    update_cache: yes
+    upgrade: "yes"
 
 - name: Create k0s Directories
   become: true
